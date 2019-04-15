@@ -16,6 +16,7 @@
 		152F01472264DF6C0022AB9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152F01462264DF6C0022AB9B /* Assets.xcassets */; };
 		152F014A2264DF6C0022AB9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152F01482264DF6C0022AB9B /* LaunchScreen.storyboard */; };
 		152F01552264DF6D0022AB9B /* Test_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F01542264DF6D0022AB9B /* Test_AppTests.swift */; };
+		152F018C2264E3610022AB9B /* Bonjour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F018B2264E3610022AB9B /* Bonjour.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		152F01502264DF6D0022AB9B /* Test AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		152F01542264DF6D0022AB9B /* Test_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AppTests.swift; sourceTree = "<group>"; };
 		152F01562264DF6D0022AB9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152F018B2264E3610022AB9B /* Bonjour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bonjour.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				152F01222264DEB00022AB9B /* TestFramework.h */,
 				152F01232264DEB00022AB9B /* Info.plist */,
+				152F018B2264E3610022AB9B /* Bonjour.swift */,
 			);
 			path = TestFramework;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				TargetAttributes = {
 					152F011E2264DEB00022AB9B = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					152F01272264DEB10022AB9B = {
 						CreatedOnToolsVersion = 10.2;
@@ -327,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152F018C2264E3610022AB9B /* Bonjour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +525,7 @@
 		152F01342264DEB10022AB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -538,6 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = show.gust.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,6 +553,7 @@
 		152F01352264DEB10022AB9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -572,6 +580,7 @@
 		152F01372264DEB10022AB9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9SNSJSP5Z2;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
@@ -590,6 +599,7 @@
 		152F01382264DEB10022AB9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9SNSJSP5Z2;
 				INFOPLIST_FILE = TestFrameworkTests/Info.plist;
